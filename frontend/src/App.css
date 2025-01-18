@@ -1,0 +1,53 @@
+/* Ensure that all the text in the app is centered */
+.App {
+  text-align: center;
+}
+
+/* Style for the App logo with an appropriate height */
+.App-logo {
+  height: 40vmin; /* Adjust logo size based on viewport */
+  pointer-events: none; /* Prevent interactions with the logo */
+}
+
+/* Conditional animation if user prefers reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Logo animation */
+  }
+}
+
+/* Styling for the header of the app */
+.App-header {
+  background-color: #282c34; /* Dark background for header */
+  min-height: 100vh; /* Ensure header takes full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* White text color */
+  padding: 20px; /* Add some padding */
+}
+
+/* Styling for the App link */
+.App-link {
+  color: #61dafb; /* Light blue color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make link text bold */
+  transition: color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Change link color on hover */
+.App-link:hover {
+  color: #21a1f1; /* Slightly darker blue when hovered */
+}
+
+/* Keyframes for the spinning logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Start rotation */
+  }
+  to {
+    transform: rotate(360deg); /* End rotation */
+  }
+}
